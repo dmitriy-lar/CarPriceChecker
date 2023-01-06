@@ -1,2 +1,4 @@
 .idea
 db.sqlite3
+film_checker/migrations
+__pycache__
