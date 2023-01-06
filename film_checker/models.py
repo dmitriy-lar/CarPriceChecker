@@ -8,3 +8,12 @@ class Film(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class CheckOne(models.Model):
+    film = models.ForeignKey(Film, on_delete=models.CASCADE)
+    checked_time = models.DateTimeField(auto_now_add=True)
+    rating = models.CharField(max_length=6)
+
+    def __str__(self):
+        return self.film.title

@@ -11,7 +11,9 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         if Film.objects.filter(title=options['film_name']).exists():
             raise CommandError('Film already exists. Try another film')
+
         Film(title=options['film_name']).save()
+
         self.stdout.write(self.style.SUCCESS('Film [%s] was successfully added' % options['film_name']))
 
 
