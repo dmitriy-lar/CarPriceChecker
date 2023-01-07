@@ -17,7 +17,6 @@ class Command(BaseCommand):
             raise CommandError('Film was not found. Try to add first')
 
         for page in range(1, settings.PAGES):
-            print(page)
             try:
                 response = requests.get(
                     f'https://www.imdb.com/list/ls046196709/?sort=list_order,asc&st_dt=&mode=detail&page={page}',

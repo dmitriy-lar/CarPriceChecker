@@ -17,3 +17,5 @@ class CheckOne(models.Model):
 
     def __str__(self):
         return self.film.title
+
+
