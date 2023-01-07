@@ -15,5 +15,3 @@ class Command(BaseCommand):
         Film(title=options['film_name']).save()
 
         self.stdout.write(self.style.SUCCESS('Film [%s] was successfully added' % options['film_name']))
-
-
