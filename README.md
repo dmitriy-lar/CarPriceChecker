@@ -8,5 +8,5 @@ _crontab_.
 ------
 
 ```
-*/1 *  *   *   *   command
+*/1 *  *   *   *   /home/dmitriy/Projects/car_price_cheker/check_many.sh
 ```
